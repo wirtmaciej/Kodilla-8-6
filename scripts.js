@@ -5,15 +5,18 @@ console.log(value);
 
 if (value > 0) {
 	console.log('wynik dodatni');
-} else { 
+} else if (value < 0) { 
 	console.log('wynik ujemny');
-}
+} else {
+	console.log('wynik nie jest ani dodatni ani ujemny');
+}	
 
-var value = value === 0 ? 'wynik jest równy zero': 'wynik jest różny od zera';
-console.log(value);
+var isEqual = value === 0 ? 'wynik jest równy zero': 'wynik jest różny od zera';
+console.log(isEqual);
 
 if (value === 0) {
 	console.log('wynik jest równy zero');
 } else { 
 	console.log('wynik jest różny od zera');
 }
+
